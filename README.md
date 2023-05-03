@@ -84,4 +84,3 @@ Devem ser utilizadas as seguintes tecnologias
 
 </br>
 **Boa Sorte** 🤞
-# frontend-challenge
