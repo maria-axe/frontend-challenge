@@ -21,26 +21,28 @@
 
 ##### [MARVEL API](https://developer.marvel.com "MARVEL API") 
 
-Modo básico o App consiste de uma tela de lista de quadrinhos, uma tela de detalhe do quadrinho (comics) e uma funcionalidade de checkout dos quadrinhos adicionados.
+A página consiste de uma tela de listagem de quadrinhos, com paginação e contendo link para uma tela de detalhe do quadrinho (comics). 
+
+Considere esta página como se fosse a página de um lojista chamado Infobase dentro de um Marketplace.
 
 Qualquer funcionalidade extra é bem vinda para agregar na solução básica proposta.
 
-O layout e por sua conta, seja criativo. A arquitetura é por sua conta, seja esperto.
+O layout e por sua conta, seja criativo. O ideal é que seja criado um módulo contendo a rota para a sua custom page.
 
 Você será avaliado pela qualidade do código, pela modularidade, pela legibilidade, pela criatividade, pela quantidade de funcionalidades básicas e extra.
 
-Não esqueça da otimização de velocidade da App nem da experiência do usuário.
+Não esqueça da otimização de velocidade e nem da experiência do usuário.
 
 ### Orientações 📌
 - Primeiramente, faça um fork e clone do projeto; 
 - Crie uma branch com o seu nome e sobrenome e depois instale configure o ambiente inicial;
+- Comite apenas o módulo criado.
+- Use qualquer versão do Magento, porém, não se esqueça de documentar qual foi usada.
 
 ### Funcionalidades 📝
 
 - 10% dos quadrinhos carregados devem ser marcados como raros (aleatoriamente no próprio fonte ao carregar o REST).
-- O checkout deve contemplar a opcão de código de desconto (pode validar mock, sem rest).
-- Faça um rest simulado (mock) para receber cupons de desconto na App.
-- (OPCIONAL) Existem dois tipos de cupons: Cupons raros e cupons comuns. Cupons comuns dão desconto somente para quadrinhos comuns enquanto raros podem ser usados em qualquer tipo.
+- Experimente colocar um banner promocional qualquer no meio da listagem de produtos.
 
 ### Critérios de avaliação ✔️
 
@@ -56,13 +58,13 @@ Não esqueça da otimização de velocidade da App nem da experiência do usuár
 
 **O que nos impressionaria:**
 - [BEM](https://getbem.com/naming/ "BEM")
-- Ver o código rodando live (Bucket estático S3, Heroku, Netlify, ...)
-- Usar commits semânticos
+- Uma página bonita, criativa e obedecendo aos padrões Magento;
+- Sem bugs ou warnings;
+- Usar commits semânticos.
 
 **O que nós não gostaríamos:**
 - Descobrir que não foi você quem fez seu teste
 - Ver commits grandes, sem muita explicação nas mensagens em seu repositório
-- Encontrar um commit com as dependências de NPM
 
 **O que avaliaremos de seu teste:**
 - Histórico de commits do git
@@ -70,16 +72,15 @@ Não esqueça da otimização de velocidade da App nem da experiência do usuár
 - Organização, semântica, estrutura, legibilidade, manutenibilidade do seu código
 - Alcance dos objetivos propostos
 - Adaptação mobile (layout responsivo)
-- Componentização e extensibilidade dos componentes Javascript
-
 
 ### Tecnologias ⚙️
 Devem ser utilizadas as seguintes tecnologias 
 
-* __ReactJS__;
-* __Qualquer Framework CSS__;
-* __Flux(Redux)__;
-* __Testes(OPCIONAL)__;
+* __Magento__;
+* __PHP__;
+* __CSS__;
+* __Javascript__;
+* __LESS__;
 * __Qualquer tecnologia e/ou padrão complementar são permitidas com as devidas justificativas no README__;
 
 </br>
