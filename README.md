@@ -38,6 +38,7 @@ Não esqueça da otimização de velocidade e nem da experiência do usuário.
 - Crie uma branch com o seu nome e sobrenome e depois instale configure o ambiente inicial;
 - Comite apenas o módulo criado.
 - Use qualquer versão do Magento, porém, não se esqueça de documentar qual foi usada.
+- Prazo de 2 dias para a entrega deste teste
 
 ### Funcionalidades 📝
 
