@@ -4,7 +4,7 @@
 
 <h3 align="center">
   <img alt="ReactJS" 
-    src="https://blog.smartlogic.io/content/images/2016/11/react_2.png" width="180px"/>
+    src="https://logosandtypes.com/wp-content/uploads/2020/07/magento.svg" width="180px"/>
 </h3>
 
 <p align="center">
@@ -17,9 +17,9 @@
 
 ## Sobre o Desafio 🚀
 
-### Criar uma SPA de um e-commerce de quadrinhos consumindo a API da Marvel
+### Criar uma página de um e-commerce de quadrinhos consumindo a API da Marvel
 
-##### [MARVEL API](http://https://developer.marvel.com "MARVEL API")
+##### [MARVEL API](https://developer.marvel.com "MARVEL API") 
 
 Modo básico o App consiste de uma tela de lista de quadrinhos, uma tela de detalhe do quadrinho (comics) e uma funcionalidade de checkout dos quadrinhos adicionados.
 
