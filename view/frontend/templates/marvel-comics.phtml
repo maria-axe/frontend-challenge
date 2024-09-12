@@ -1,0 +1,27 @@
+<!-- 
+/**
+ * Copyright ©  Infobase. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+ -->
+
+<div id="marvel-scope" data-bind="scope: 'marvel-scope'">
+    <!-- ko if: isVisible() -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    <!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "marvel-scope": {
+                    "component": "Infobase_MarvelStore/js/marvel-comics",
+                    "template": "Infobase_MarvelStore/marvel"
+                }
+            }
+        }
+    }
+}
+</script>

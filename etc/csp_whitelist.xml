@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Copyright ©  Infobase. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+ -->
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_whitelist.xsd">
+    <policies>
+        <!-- Permissões para conexões -->
+        <policy id="connect-src">
+            <values>
+                <value id="self" type="host">self</value>
+                <value id="gateway-marvel" type="host">https://gateway.marvel.com</value>
+            </values>
+        </policy>
+
+        <!-- Permissões para carregamento de imagens -->
+        <policy id="img-src">
+            <values>
+                <value id="self" type="host">self</value>
+                <value id="marvel-images" type="host">http://i.annihil.us</value>
+                <value id="marvel-images-secure" type="host">https://i.annihil.us</value>
+            </values>
+        </policy>
+    </policies>
+</csp_whitelist>
