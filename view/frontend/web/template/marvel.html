@@ -5,17 +5,24 @@
  */
  -->
 
- <div>
-    <!-- Loop para exibir os quadrinhos -->
-    <div data-bind="foreach: comics">
-        <img data-bind="attr: { src: $data.thumbnail.path + '.' + $data.thumbnail.extension }" />
-        <div data-bind="text: $data.title"></div>
-        <div data-bind="text: $data.id"></div>
-        <button data-bind="click: $parent.initModal.bind($data)">Abrir Modal</button>
-        <div data-bind="attr: { id: 'custom-popup-modal-' + $data.id }" class="custom-popup-modal">
-            Edição: <div data-bind="text: $data.title"></div>
-            Data: <div data-bind="text: $data.modified"></div>
-            Categoria: <div data-bind="text: $data.format"></div>
-        </div>
-    </div>
+ <div class="marvel-container">
+    <ul class="comic-container" data-bind="foreach: comics">
+        <li class="comic-item" data-bind="visible: !($data.thumbnail.path.includes('image_not_available'))">
+            <img class="comic-image" data-bind="attr: { src: $data.thumbnail.path + '.' + $data.thumbnail.extension }" />
+            <div class="comic-info">
+                <div class="comic-title">Title: <span data-bind="text: $data.title"></span></div>
+                <div class="comic-id">SKU: <span data-bind="text: $data.id"></span></div>
+                <div class="comic-rarity" data-bind="visible: $data.isRare">
+                    <strong>Raro!</strong>
+                </div>
+                <button class="modal-button" data-bind="click: $parent.initModal.bind($data)">Detalhes</button>
+                <div data-bind="attr: { id: 'custom-popup-modal-' + $data.id }" class="custom-popup-modal">
+                    Edição: <div data-bind="text: $data.title"></div>
+                    Data: <div data-bind="text: $data.modified"></div>
+                    Categoria: <div data-bind="text: $data.format"></div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <button class="load-more-button" data-bind="click: loadMoreComics">Carregar Mais</button>
 </div>

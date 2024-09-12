@@ -5,7 +5,14 @@
  */
  -->
 
+<div class="marvel-banner-comics">
+    <img class="banner-marvel" src="<?php echo $block->getViewFileUrl('Infobase_MarvelStore/images/banner-marvel.png'); ?>" alt="marvel" />
+</div>
+
 <div id="marvel-scope" data-bind="scope: 'marvel-scope'">
+    <div data-bind="visible: loading" class="loading">
+        <img class="loading-marvel" src="<?php echo $block->getViewFileUrl('Infobase_MarvelStore/images/loading-marvel.gif'); ?>" alt="marvel" />
+    </div>
     <!-- ko if: isVisible() -->
         <!-- ko template: getTemplate() --><!-- /ko -->
     <!-- /ko -->

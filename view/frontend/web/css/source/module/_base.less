@@ -1,0 +1,147 @@
+/**
+ * Copyright ©  Infobase. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+//
+//  Common (styles-m.css)
+//  _____________________________________________
+
+& when (@media-common =true) {
+
+    .infobase_marvelstore-index-index {
+        background: #f8f8f8;
+
+        .marvel-container {
+            display: flex;
+            flex-direction: column;
+
+            .load-more-button {
+                height: 50px;
+                background: #000;
+                color: #fff;
+                text-transform: uppercase;
+
+                &:hover {
+                    background: #fff;
+                    color: #000;
+                    border: 1px solid #000;
+                }
+            }
+
+            ul {
+                &.comic-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 16px;
+                    list-style-type: none;
+                    padding: 0;
+
+                    .comic-item {
+                        position: relative;
+                        flex: 1 1 calc(22%);
+                        box-sizing: border-box;
+                        min-height: 300px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        background-color: #fff;
+                        padding: 20px;
+                        border-radius: 5px;
+
+                        &:hover {
+                            box-shadow: -4px 4px 12px rgba(0, 0, 0, .08) !important;
+                        }
+
+                        .comic-id {
+                            margin-top: 10px;
+                        }
+
+                        .comic-title,
+                        .comic-id {
+                            font-weight: bold;
+                            font-size: 15px;
+
+                            span {
+                                font-weight: normal;
+                            }
+                        }
+
+                        .comic-image {
+                            margin-bottom: 20px;
+                        }
+
+                        .modal-button {
+                            width: 100%;
+                            height: 40px;
+                            margin-top: 10px;
+                            background: #000;
+                            color: #fff;
+                            border: none;
+                            cursor: pointer;
+                            text-transform: uppercase;
+
+                            &:hover {
+                                background: #fff;
+                                color: #000;
+                                border: 1px solid #000;
+                            }
+                        }
+
+                        .custom-popup-modal {
+                            display: none;
+                        }
+
+                        .comic-rarity {
+                            position: absolute;
+                            top: -10px;
+                            right: -10px;
+                            z-index: 1;
+                            background: linear-gradient(45deg, #FFD700, #FFB14E, #FF9900);
+                            padding: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .marvel-banner-comics {
+            .banner-marvel {
+                margin-bottom: 20px;
+            }
+        }
+
+        .loading {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            right: 0;
+            height: 100vh;
+            top: 0;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000d4;
+            z-index: 10;
+
+            img {
+                max-width: 100px;
+                max-height: 100px;
+            }
+        }
+    }
+}
+
+/* Ajuste para tablets e telas menores */
+@media (max-width: @screen__l) {
+    .infobase_marvelstore-index-index {
+        ul {
+            &.comic-container {
+                .comic-item {
+                    flex: 1 1 calc(33.33%);
+                    min-height: 250px;
+                }
+            }
+        }
+    }
+}
