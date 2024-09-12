@@ -3,15 +3,9 @@
 </h3>
 
 <h3 align="center">
-  <img alt="ReactJS" 
+  <img alt="Magento" 
     src="https://logosandtypes.com/wp-content/uploads/2020/07/magento.svg" width="180px"/>
 </h3>
-
-<p align="center">
-  <img alt="language version" src="https://img.shields.io/badge/React-v18.2.0-2C8EBB?logo=React">
-
-  <img alt="language version" src="https://img.shields.io/badge/Yarn-v_1.229-2C8EBB?logo=Yarn">
-</p>
 
 <hr/>
 
