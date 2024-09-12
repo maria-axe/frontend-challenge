@@ -5,7 +5,17 @@
  */
  -->
 
-<div>
-    <p data-bind="text: comics"></p>
-    <p data-bind="text: comicName"></p>
+ <div>
+    <!-- Loop para exibir os quadrinhos -->
+    <div data-bind="foreach: comics">
+        <img data-bind="attr: { src: $data.thumbnail.path + '.' + $data.thumbnail.extension }" />
+        <div data-bind="text: $data.title"></div>
+        <div data-bind="text: $data.id"></div>
+        <button data-bind="click: $parent.initModal.bind($data)">Abrir Modal</button>
+        <div data-bind="attr: { id: 'custom-popup-modal-' + $data.id }" class="custom-popup-modal">
+            Edição: <div data-bind="text: $data.title"></div>
+            Data: <div data-bind="text: $data.modified"></div>
+            Categoria: <div data-bind="text: $data.format"></div>
+        </div>
+    </div>
 </div>
