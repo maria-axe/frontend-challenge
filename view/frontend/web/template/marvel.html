@@ -25,7 +25,10 @@
                     <span data-bind="i18n: 'Detalhes'"></span>
                 </button>
                 <div data-bind="attr: { id: 'custom-popup-modal-' + $data.id }" class="custom-popup-modal">
-                    <div>
+                    <div class="comic-image-container">
+                        <div class="comic-rarity" data-bind="visible: $data.isRare">
+                            <strong data-bind="i18n: 'Rare!'"></strong>
+                        </div>
                         <img class="comic-image" data-bind="attr: { src: $data.thumbnail.path + '.' + $data.thumbnail.extension }" />
                     </div>
                     <div class="comic-info-modal">

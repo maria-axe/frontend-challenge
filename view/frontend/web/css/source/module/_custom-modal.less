@@ -31,6 +31,15 @@
                         span {
                             font-size: 16px;
                         }
+
+                        .comic-rarity {
+                            position: absolute;
+                            top: -10px;
+                            right: -10px;
+                            z-index: 1;
+                            background: linear-gradient(45deg, #FFD700, #FFB14E, #FF9900);
+                            padding: 15px;
+                        }
                     }
 
                     .comic-image {
@@ -56,6 +65,46 @@
                             background: #fff;
                             color: #000;
                             border: 1px solid #000;
+                        }
+                    }
+                }
+
+                .action-close {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: @screen__m) {
+    .infobase_marvelstore-index-index { 
+        .custom-popup-modal {
+            .modal-inner-wrap {
+                .modal-content {
+                    .custom-popup-modal {
+                        .comic-rarity {
+                            top: 0;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .infobase_marvelstore-index-index { 
+        .custom-popup-modal {
+            .modal-inner-wrap {
+                .modal-content {
+                    .custom-popup-modal {
+                        flex-direction: column;
+
+                        .comic-image-container {
+                            display: flex;
+                            justify-content: center;
                         }
                     }
                 }
