@@ -40,7 +40,7 @@ define([
                     modalClass: 'custom-popup-modal',
                     buttons: [{
                         text: $.mage.__('Close'),
-                        class: '',
+                        class: 'button-close',
                         click: function () {
                             modalElement.modal('closeModal');
                         }

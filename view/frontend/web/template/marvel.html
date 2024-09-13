@@ -11,11 +11,11 @@
             <img class="comic-image" data-bind="attr: { src: $data.thumbnail.path + '.' + $data.thumbnail.extension }" />
             <div class="comic-info">
                 <div class="comic-title">
-                    <span data-bind="i18n: 'Title:'"></span> 
+                    <span class="comic-label" data-bind="i18n: 'Title:'"></span> 
                     <span data-bind="text: $data.title"></span>
                 </div>
                 <div class="comic-id">
-                    <span data-bind="i18n: 'SKU:'"></span> 
+                    <span class="comic-label" data-bind="i18n: 'SKU:'"></span> 
                     <span data-bind="text: $data.id"></span>
                 </div>
                 <div class="comic-rarity" data-bind="visible: $data.isRare">
@@ -26,16 +26,35 @@
                 </button>
                 <div data-bind="attr: { id: 'custom-popup-modal-' + $data.id }" class="custom-popup-modal">
                     <div>
-                        <span data-bind="i18n: 'Edition:'"></span>
-                        <span data-bind="text: $data.title"></span>
+                        <img class="comic-image" data-bind="attr: { src: $data.thumbnail.path + '.' + $data.thumbnail.extension }" />
                     </div>
-                    <div>
-                        <span data-bind="i18n: 'Date:'"></span>
-                        <span data-bind="text: $data.modified"></span>
-                    </div>
-                    <div>
-                        <span data-bind="i18n: 'Category:'"></span>
-                        <span data-bind="text: $data.format"></span>
+                    <div class="comic-info-modal">
+                        <div>
+                            <span class="comic-label" data-bind="i18n: 'Edition:'"></span>
+                            <span data-bind="text: $data.title"></span>
+                        </div>
+                        <div>
+                            <span class="comic-label" data-bind="i18n: 'Date:'"></span>
+                            <span data-bind="text: $data.modified"></span>
+                        </div>
+                        <div>
+                            <span class="comic-label" data-bind="i18n: 'Category:'"></span>
+                            <span data-bind="text: $data.format"></span>
+                        </div>
+                        <div class="comic-description">
+                            <span class="comic-label" data-bind="i18n: 'Description:'"></span>
+                            <span>
+                                Seção 1.10.32 de "de Finibus Bonorum et Malorum", escrita por Cícero em 45 AC
+                                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                                ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
+                                quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum 
+                                iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
+                                nulla pariatur?"
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
